@@ -1,0 +1,245 @@
+:root {
+  --main-bg-color: #fdfdf5; /* 60% */
+  --primary-color: #4a2e2e; /* 30% */
+  --accent-color: #d19a66; /* 10% */
+
+  --bs-primary: #4a2e2e; /* Deep Brown */
+  --bs-secondary: #d19a66; /* Burnt Orange */
+  --bs-light: #fdfdf5; /* Warm Off-White */
+}
+
+.text-bold {
+  font-family: "Droid-Bold" !important;
+}
+
+@font-face {
+  font-family: "Droid-Bold";
+  src: url("../fonts/alfont_com_DroidNaskh-Bold-2.ttf") format("truetype"),
+    /* Older browsers */ url("../fonts/alfont_com_DroidNaskh-Bold-2.ttf")
+      format("truetype"); /* Backup for old browsers */
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Droid-Regular";
+  src: url("../fonts/Droid-Naskh-Regular.ttf") format("truetype"),
+    /* Older browsers */ url("../fonts/Droid-Naskh-Regular.ttf")
+      format("truetype"); /* Backup for old browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Droid" !important;
+  background-color: var(--main-bg-color) !important;
+  color: var(--primary-color);
+}
+.btn-primary {
+  background-color: #4a2e2e;
+  border-color: #4a2e2e;
+  color: #fdfdf5;
+}
+
+.btn-primary:hover {
+  background-color: #3e2626;
+  border-color: #3e2626;
+}
+
+.btn-secondary {
+  background-color: #d19a66;
+  border-color: #d19a66;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #b38355;
+  border-color: #b38355;
+}
+
+.btn:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 0.25rem rgba(209, 154, 102, 0.5); /* Use accent color with transparency */
+  background-color: #4a2e2e !important;
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(74, 46, 46, 0.5); /* Dark brown focus shadow */
+  background-color: #4a2e2e !important;
+}
+
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(209, 154, 102, 0.5); /* Burnt orange focus shadow */
+}
+
+.form-control:focus {
+  border-color: #d19a66; /* Burnt orange border color */
+  box-shadow: 0 0 5px rgba(209, 154, 102, 0.5); /* Accent color shadow */
+  outline: none;
+}
+
+:root {
+  --bs-focus-ring-color: rgba(209, 154, 102, 0.5); /* Accent color focus */
+  --bs-focus-shadow-rgb: 209, 154, 102; /* RGB for accent color shadow */
+}
+
+.btn:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color); /* Applies to all focused elements */
+}
+
+.shake {
+  animation: shake 0.5s ease;
+}
+
+/* Custom styles for Bootstrap navbar */
+.navbar {
+  background-color: var(--main-bg-color); /* Warm Off-White */
+  color: var(--primary-color); /* Deep Brown for text */
+  padding: 1rem;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 1.3rem !important;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary-color); /* Deep Brown text color for links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--accent-color); /* Burnt Orange for hover effect */
+}
+
+/* Alternate: Darker navbar background */
+.navbar-alternate {
+  background-color: var(--primary-color); /* Deep Brown background */
+  color: var(--main-bg-color); /* Off-White text color */
+}
+
+.navbar-alternate .navbar-nav .nav-link {
+  color: var(--main-bg-color); /* Off-White text color for links */
+}
+
+.navbar-alternate .navbar-nav .nav-link:hover {
+  color: var(--accent-color); /* Burnt Orange hover effect */
+}
+
+/* Optional: Style the brand/logo */
+.navbar-brand {
+  font-family: "Playfair Display", serif; /* Example serif font for vintage look */
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+/* Optional: Additional styling for mobile view */
+.navbar-toggler {
+  border-color: #d19a66; /* Burnt Orange border for toggle button */
+}
+
+/* Background */
+.vintage-background {
+  background-color: #fdf5e6; /* Light parchment color */
+  background-image: url("path/to/your/textured-background.png"); /* Add path to textured image */
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* Main Text */
+.headline {
+  font-family: "Droid-Bold", serif;
+  color: #4a2e2e; /* Deep brown for vintage feel */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.2rem;
+  color: #6c5c51; /* Muted brown for supporting text */
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Button */
+.btn-burnt-orange {
+  background-color: #d19a66; /* Burnt orange */
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-burnt-orange:hover {
+  background-color: #bb7f4a; /* Darker burnt orange for hover */
+}
+
+.btn-burnt-orange:focus {
+  color: var(--main-bg-color) !important;
+}
+.hero-image {
+  width: 29rem;
+}
+
+.category-title {
+  font-size: 1.4rem !important;
+  color: #6c5c51;
+  font-family: "Droid-Regular";
+  margin-bottom: 2rem;
+}
+
+::placeholder {
+  color: #bfbfbf !important;
+  direction: rtl !important;
+}
+
+input {
+  direction: rtl !important;
+}
+
+/* Phone size */
+@media (max-width: 990px) {
+  .hero-image {
+    width: 18rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse !important;
+  }
+
+  .headline {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-link {
+  text-decoration: none !important;
+  color: var(--accent-color);
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
