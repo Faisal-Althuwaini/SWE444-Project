@@ -1,6 +1,6 @@
 Database name :
 
-bookstore-db
+bookstore_db
 
 Tables :
 
